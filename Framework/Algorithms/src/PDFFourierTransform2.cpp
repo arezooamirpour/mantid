@@ -269,7 +269,7 @@ void PDFFourierTransform2::convertToSQMinus1(std::vector<double> &FOfQ,
                                              std::vector<double> &Q,
                                              std::vector<double> &DFOfQ,
                                              std::vector<double> &DQ) {
-  // convert to Q[S(Q)-1]
+  // convert to S(Q)-1
   string soqType = getProperty("SofQType");
   string inputSOQType = getProperty("InputSofQType");
   if (!isDefault("InputSofQType") && isDefault("SofQType")) {
